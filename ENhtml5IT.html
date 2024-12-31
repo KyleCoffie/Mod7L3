@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lesson 3 Assignment</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <h2>Implementing Email Input</h2>
+
+    <form>
+        <label for="user-email">Email:</label>
+        <input type="email" id="user-email" name="user-email" placeholder="Enter your email" required>
+        <button type="submit">Submit</button>
+    
+
+    <h2>Utilizing Number Input</h2>
+        <section>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="15" step="1" >
+        <button type="submit">Submit</button>
+        </section>
+    <h2>Employing Date Input</h2>
+
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate">
+        <button type="submit">Submit</button>
+    
+    <h2>Enhancing User Experience with Range Input</h2>
+        
+        <section>
+        <label for="points">Points (between 0 and 20):</label>
+        <input type="range" id="points" name="points" min="0" max="20" value="5" oninput="this.nextElementSibling.value = this.value">
+        <output for="points" >5</output>
+        <button type="submit">Submit</button>
+        </section>
+
+        <h2>Capturing Color with color input</h2>
+        <label for="Colors">Colors:</label>
+        <input type="color" name="colors" id="colors" value="#ff0000"
+        >
+        <button type="submit">Submit</button>
+        
+
+    </form>
+</body>
+</html>

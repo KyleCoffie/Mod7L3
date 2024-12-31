@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Building a Comprehensive Web Form</title>
+    </head>
+
+<body>
+    <h1>Creating a selection Experience</h1>
+
+    <form action="/submit" method="post">
+
+        <label for="Programming">Favorite Programming Language:</label>
+        <select id="Programming" name="Programming" required aria-required="true">
+            <option value="python">Python</option>
+            <option value="javascript">Javascript</option>
+            <option value="c++">C++</option>
+            <option value="java">Java</option>
+        </select>
+        <br>
+        <br>
+        
+        
+        <label for="Level of Expertise">Level of Expertise</label>
+        <input type="radio" id="beginner" name="Level" value="beginner" required aria-required="true">
+        <label for="beginner">Beginner</label>
+        <input type="radio" id="intermediate" name="Level" value="intermediate" required aria-required="true">
+        <label for="intermediate">Intermediate</label>
+        <input type="radio" id="advanced" name="Level" value="advanced" required aria-required="true">
+        <label for="advanced">Advanced</label>
+        
+        
+        <h2>Preferred Development Platform</h2>
+        <label for="Web">Web:</label>
+        <input type="checkbox" id="Web" name="Web" value="yes">
+        <label for="Desktop">Desktop:</label>
+        <input type="checkbox" id="Desktop" name="Desktop" value="yes">
+        <label for="Mobile">Mobile:</label>
+        <input type="checkbox" id="Mobile" name="Mobile" value="yes">
+        
+        <input type="submit" value="Submit">
+
+
+    </form>
+</body>
+</html>
